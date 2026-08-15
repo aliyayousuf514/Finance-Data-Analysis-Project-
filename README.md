@@ -1,95 +1,200 @@
-📊 Finance Data Analysis & EDA Project
+# 📊 Stock Market Data Analysis & EDA
 
-📌 Project Overview
+## 📌 Project Overview
 
-This project focuses on analyzing **live financial market data** using Python. The data was collected using the **yFinance** library and explored through Exploratory Data Analysis (EDA) to identify trends, patterns, and insights from financial market data.
+This project focuses on analyzing historical stock market data of major technology companies using Python.
 
-The project includes data collection, data cleaning, exploratory analysis, visualization, and a **Final Report** documenting the complete analysis and findings.
+The objective of this project is to understand stock price movements, daily returns, trading activity, volatility, and relationships between different technology stocks through statistical analysis and data visualization.
 
-🎯 Objectives
+The selected companies for this analysis are:
 
-* Collect live financial market data using `yFinance`
-* Clean and prepare the dataset for analysis
-* Perform Exploratory Data Analysis (EDA)
-* Analyze price trends and market patterns
-* Create meaningful data visualizations
-* Extract useful insights from the financial data
-* Prepare a detailed Final Report of the analysis
-
-🛠️ Tools & Technologies
-
-* **Python**
-* **Pandas**
-* **NumPy**
-* **Matplotlib**
-* **Seaborn**
-* **yFinance**
-* **Jupyter Notebook**
-
-🔍 Project Workflow
-
-1. **Data Collection**
-
-   * Retrieved financial market data using the `yFinance` API.
-
-2. **Data Cleaning & Preparation**
-
-   * Checked the dataset structure
-   * Handled missing values
-   * Prepared the data for analysis
-
-3. **Exploratory Data Analysis**
-
-   * Analyzed price movements
-   * Examined trends and patterns
-   * Calculated relevant statistics
-
-4. **Data Visualization**
-
-   * Created charts and graphs using Matplotlib and Seaborn
-   * Visualized financial trends and patterns
-
-5. **Insights & Findings**
-
-   * Identified important patterns from the data
-   * Summarized key observations from the analysis
-
-6. **Final Report**
-
-   * Prepared a detailed report containing the methodology, analysis, visualizations, findings, and conclusions.
-
-📁 Project Files
-
-```text
-Finance-EDA-Project/
-│
-├── Finance_EDA_Project.ipynb    # Jupyter Notebook
-├── financial_data.csv           # Dataset
-├── Final_Report.pdf             # Final project report
-└── README.md                    # Project documentation
-```
-
-📈 Key Skills Demonstrated
-
-* Data Collection
-* Data Cleaning
-* Exploratory Data Analysis
-* Data Visualization
-* Financial Data Analysis
-* Python Programming
-* Statistical Analysis
-* Report Writing
-
-💡 Key Learning
-
-This project provided practical experience in working with **real-world financial data** and helped strengthen my skills in **Python, Pandas, data visualization, EDA, and analytical reporting**.
-
-👩‍💻 Author
-
-**Aliya Yousuf**
-
-Interested in **Data Analysis, Python, Business Intelligence, and Data Visualization**.
+- 🍎 Apple Inc. (AAPL)
+- 📦 Amazon.com Inc. (AMZN)
+- 🎬 Netflix Inc. (NFLX)
 
 ---
 
-⭐ If you find this project useful, feel free to explore the notebook and analysis.
+## 🎯 Project Objectives
+
+The main objectives of this project are:
+
+- Collect historical stock market data
+- Perform data checking and preprocessing
+- Analyze stock prices using descriptive statistics
+- Visualize closing price trends
+- Analyze trading volume
+- Calculate daily stock returns
+- Analyze stock risk and volatility
+- Perform Pearson correlation analysis
+- Visualize relationships using a correlation heatmap
+- Draw conclusions from the analysis
+
+---
+
+## 📂 Dataset
+
+The historical stock market data was collected using the **yFinance** Python library.
+
+The dataset contains daily stock market information including:
+
+- Date
+- Open Price
+- High Price
+- Low Price
+- Close Price
+- Trading Volume
+
+The analysis covers the period:
+
+**January 2024 – December 2024**
+
+Each selected company contains approximately **252 trading-day records**.
+
+---
+
+## 🛠️ Technologies & Libraries Used
+
+- **Python**
+- **Pandas** – Data manipulation and analysis
+- **NumPy** – Numerical calculations
+- **Matplotlib** – Data visualization
+- **Seaborn** – Statistical visualization and heatmap
+- **yFinance** – Historical stock market data
+- **Jupyter Notebook** – Development environment
+
+---
+
+## 🔍 Analysis Performed
+
+### 1. Data Collection
+
+Historical stock data for AAPL, AMZN, and NFLX was collected using `yFinance`.
+
+### 2. Data Preprocessing
+
+The dataset was checked for:
+
+- Missing values
+- Data types
+- Number of records
+- Column names
+- Data consistency
+
+No major missing-value issues were found in the collected data.
+
+### 3. Descriptive Statistical Analysis
+
+The following statistics were calculated:
+
+- Mean closing price
+- Median closing price
+- Minimum closing price
+- Maximum closing price
+- Standard deviation
+
+### 4. Stock Price Visualization
+
+Line charts were created to analyze closing price movements of:
+
+- AAPL
+- AMZN
+- NFLX
+
+The analysis showed that all three stocks experienced fluctuations while generally following an increasing trend during the selected period.
+
+### 5. Trading Volume Analysis
+
+Trading volume was visualized over time to identify:
+
+- High-volume trading days
+- Sudden spikes
+- Unusual changes in trading activity
+
+### 6. Daily Return Analysis
+
+Daily stock returns were calculated using the formula:
+
+```text
+Daily Return =
+(Today's Closing Price - Previous Day's Closing Price)
+/
+Previous Day's Closing Price
+Daily return graphs were created to understand daily gains and losses.
+
+7. Risk & Volatility Analysis
+
+Standard deviation of daily returns was used to measure stock volatility.
+
+Company	Standard Deviation
+AAPL	0.014123
+AMZN	0.017706
+NFLX	0.018589
+
+NFLX showed the highest volatility, while AAPL was the most stable.
+
+8. Correlation Analysis
+
+Pearson correlation was used to analyze the relationship between the selected companies.
+
+	AAPL	AMZN	NFLX
+AAPL	1.00	0.65	0.80
+AMZN	0.65	1.00	0.90
+NFLX	0.80	0.90	1.00
+
+The strongest relationship was found between AMZN and NFLX (0.90).
+
+The weakest relationship was between AAPL and AMZN (0.65).
+
+📈 Key Findings
+All three stocks showed fluctuations throughout the selected period.
+Overall, AAPL, AMZN, and NFLX showed an increasing trend.
+NFLX had the highest volatility with a standard deviation of 0.018589.
+AAPL was the most stable stock with a standard deviation of 0.014123.
+AMZN and NFLX had the strongest positive correlation (0.90).
+AAPL and AMZN had the weakest correlation (0.65).
+Several unusual spikes in trading volume were observed during the period.
+📊 Visualizations
+
+The project includes visualizations for:
+
+Closing Price Trends
+Trading Volume
+Daily Stock Returns
+Correlation Heatmap
+📁 Project Structure
+Stock-Market-Data-Analysis/
+│
+├── 📓 Stock_Market_Analysis.ipynb
+├── 📊 Financial_Data.csv
+├── 📄 Final_Report.pdf
+└── 📖 README.md
+📝 Final Report
+
+A detailed Final Analysis Report was prepared containing:
+
+Introduction
+Methodology
+Descriptive Statistics
+Stock Price Analysis
+Daily Return Analysis
+Volatility Analysis
+Correlation Analysis
+Visualizations
+Final Conclusions
+🎥 Project Walkthrough
+
+A video walkthrough of the complete project was also recorded to demonstrate the data collection, analysis, visualizations, and findings.
+
+💡 Conclusion
+
+This project provided practical experience in analyzing real-world financial data using Python.
+
+The analysis demonstrated how statistical techniques and visualization can be used to understand stock performance, risk, volatility, and relationships between different companies.
+
+Overall, NFLX showed the highest volatility, while AAPL was the most stable among the selected stocks. The correlation analysis also showed strong positive relationships between the selected technology companies.
+
+👩‍💻 Author
+
+Aliya Yousuf
+
+Aspiring Data Analyst | Python | Data Analysis | Data Visualization
